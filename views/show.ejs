@@ -4,10 +4,10 @@
         <div class="ui top attached">
             <div class="item">
                 <img class="ui centered rounded image" src="<%= blog.image %>">
-                <div class="content">
+                <div class="content" style="margin: 10px 0 10px 0;">
                     <span><%= blog.created.toDateString() %></span>
                 </div>
-                <div class="description">
+                <div class="description" style="margin-bottom: 10px;">
                     <p><%- blog.body %></p>
                 </div>
                 <a class="ui orange basic button" href="/blogs/<%= blog._id %>/edit">Edit</a>

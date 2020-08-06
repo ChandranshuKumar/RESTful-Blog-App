@@ -15,5 +15,8 @@
     "express-sanitizer": "^1.0.4",
     "method-override": "^2.3.10",
     "mongoose": "^5.0.18"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

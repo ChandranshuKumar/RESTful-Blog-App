@@ -3,21 +3,21 @@
        	<div class="ui huge header">RESTful Blog App</div>
         <div class="ui top attached segment">
             <div class="ui divided items">
-                <% blogs.forEach(function(blog){ %>
+                <% blogs.forEach(blog => { %>
                 <div class="item">
                     <div class="image">
                 	    <img src="<%= blog.image %>">
                 	</div>
                 	<div class="content">
-                	    <a href="/blogs/<%=blog._id %>" class="header"><%= blog.title %></a>
+                	    <a href="/blogs/<%= blog._id %>" class="header"><%= blog.title %></a>
                 	    <div class="meta">
                 	        <span class="cinema"><%= blog.created.toDateString() %></span>
                 	    </div>
                 	    <div class="description">
-                	        <p><%= blog.body.substring(0,100); %>..."</p>
+                	        <p><%= blog.body.substring(0,140); %>..."</p>
                 	    </div>
                 	    <div class="extra">
-                	        <a href="/blogs/<%=blog._id %>" class="ui floated basic violet button">
+                	        <a href="/blogs/<%= blog._id %>" class="ui floated basic violet button">
                 	          Read More
                 	          <i class="right chevron icon"></i>
                 	        </a>
